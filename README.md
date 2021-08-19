@@ -22,13 +22,16 @@ Paso 6 - Para probar que docker está funcionando, se puede ejecutar la siguient
 Paso 7 - Estando en la VM (máquina virtual) y una vez instalado git y docker, hay que clonar este git con el siguiente comando:
 # git clone https://github.com/jeaggo/streamlit_app.git
 
-Paso 8 - Cuando se clona el git, lo siguiente es construir (cargar) el contenedor (docker) en la VM y se realiza con el siguiente comando:
+Paso 8 - Una vez que se clona el git hub, hay que ir al directorio streamlit_app
+# cd streamlit_app/
+
+Paso 9 - Cuando se clona el git, lo siguiente es construir (cargar) el contenedor (docker) en la VM y se realiza con el siguiente comando:
 # sudo docker build -t streamlitapp:latest .
 
-Paso 9 - Posteriormente hay que inicializar el contenedor para que este acitivo y esto se realiza con el siguiente comando.
+Paso 10 - Posteriormente hay que inicializar el contenedor para que este acitivo y esto se realiza con el siguiente comando.
 # sudo docker run --name streamlit-container -p 8501:8501 -d streamlitapp:latest 
 
-Paso 10 - En la sección denominada "Activate Cloud Shell" de la VM en GCP hay que activar el puerto 8501 para que tenga salida, por lo que hay que ejecutar el siguiente comando:
+Paso 11 - En la sección denominada "Activate Cloud Shell" de la VM en GCP hay que activar el puerto 8501 para que tenga salida, por lo que hay que ejecutar el siguiente comando:
 # gcloud compute firewall-rules create streamlit --allow tcp:8501
 
 
