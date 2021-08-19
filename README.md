@@ -22,7 +22,7 @@ Paso 6 - Para probar que docker está funcionando, se puede ejecutar la siguient
 Paso 7 - Estando en la VM (máquina virtual) y una vez instalado git y docker, hay que clonar este git con el siguiente comando:
 # git clone https://github.com/jeaggo/streamlit_app.git
 
-Paso 8 - Una vez que se clona el git hub, hay que ir al directorio streamlit_app
+Paso 8 - Una vez que se clona el git, hay que ir al directorio streamlit_app
 # cd streamlit_app/
 
 Paso 9 - Cuando se clona el git, lo siguiente es construir (cargar) el contenedor (docker) en la VM y se realiza con el siguiente comando:
