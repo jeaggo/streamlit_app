@@ -5,9 +5,12 @@ Paso 2 - Posteriormente, hay que instalar Docker en la VM, y lo primero es insta
 # sudo yum install -y yum-utils
 
 Paso 3 - Teniendo instaladas las utilidades de yum, ahora podemos instalar docker, pero hay que establecer un repositorio que sea estable
-# sudo yum-config-manager \
-#    --add-repo \
-#    https://download.docker.com/linux/centos/docker-ce.repo
+
+sudo yum-config-manager \
+
+--add-repo \
+
+https://download.docker.com/linux/centos/docker-ce.repo
 
 Paso 4 - Una vez especificado el repositorio estable ahora podemos instalar docker
 # sudo yum install docker-ce docker-ce-cli containerd.io
