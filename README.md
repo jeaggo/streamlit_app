@@ -8,9 +8,9 @@ Paso 3 - Teniendo instaladas las utilidades de yum, ahora podemos instalar docke
 
 sudo yum-config-manager \
 
- --add-repo \
+  --add-repo \
 
- https://download.docker.com/linux/centos/docker-ce.repo
+  https://download.docker.com/linux/centos/docker-ce.repo
 
 Paso 4 - Una vez especificado el repositorio estable ahora podemos instalar docker
 # sudo yum install docker-ce docker-ce-cli containerd.io
